@@ -59,3 +59,8 @@ form label {
   font-weight: bold;
   color: maroon;
 }
+
+/* highlight the background */
+table#movies th.hilite {
+  background-color: yellow;
+}
