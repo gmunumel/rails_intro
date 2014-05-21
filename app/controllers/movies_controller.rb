@@ -7,8 +7,15 @@ class MoviesController < ApplicationController
   end
 
   def index
-    #debugger
-    #puts params
+    # bring ratings values
+    m = Movie.new
+    @all_ratings = m.ratings_values
+    
+    # get checked values
+    @checked = Hash.new(false)
+    params[:ratings].each_key { |key| @checked[key] = true } if params[:ratings] != nil
+    
+    # get title and release dates filters
     case params[:selected]
     when 'M'
       @movies = Movie.find(:all, :order => :title)
@@ -17,7 +24,8 @@ class MoviesController < ApplicationController
       @movies = Movie.find(:all, :order => :release_date)
       @release_date_header = 'hilite'
     else
-      @movies = Movie.all
+      @movies = Movie.all if params[:ratings] == nil
+      @movies = Movie.find(:all, :conditions => { :rating => params[:ratings].keys }) if params[:ratings] != nil
     end
   end
 
