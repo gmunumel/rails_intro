@@ -11,44 +11,32 @@ class MoviesController < ApplicationController
     m = Movie.new
     @all_ratings = m.ratings_values
     
-    #debugger
-=begin
-    if params[:selected].nil? and params[:ratings].nil? and not session[:selected].nil?
-      tmp = session[:selected]
-      session.delete(:selected)
-      flash.keep
-      redirect_to movies_path(selected: tmp)
-    end
-    if params[:ratings].nil? and params[:selected].nil? and not session[:ratings].nil?
-      tmp = session[:ratings]
-      session.delete(:ratings)
-      flash.keep
-      redirect_to movies_path(ratings: tmp)
-    end
-    
-    if not params[:selected].nil? 
-      session[:selected] = params[:selected] if params[:selected] != session[:selected]
-      session[:selected] ||= params[:selected]
-      params[:selected] ||= session[:selected]
-      session.delete(:ratings)
-    end
-    if not params[:ratings].nil? 
-      session[:ratings] = params[:ratings] if params[:ratings] != session[:ratings]
-      session[:ratings] ||= params[:ratings]
-      params[:ratings] ||= session[:ratings]
-      session.delete(:selected)
-    end
-=end
-    
     # get checked values
     @checked = Hash.new(false)
-    #debugger
-    #params[:ratings] ||= session[:ratings]
-    session[:ratings] = params[:ratings] unless params[:ratings].nil? 
-    if params[:selected].nil? and params[:ratings].nil? and session[:selected].nil? and session[:ratings].nil? 
+    
+    redirect = false
+    
+    if params[:selected].nil? and params[:ratings].nil? and 
+        session[:selected].nil? and session[:ratings].nil? 
       params[:ratings] = {"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"} 
+      redirect = true
     end
-    params[:ratings] ||= session[:ratings]
+    
+    if params[:selected].nil? and not session[:selected].nil?
+      params[:selected] = session[:selected]
+      redirect = true
+    elsif params[:selected] != session[:selected]
+      session[:selected] = params[:selected]
+      redirect = true
+    end
+    if params[:ratings].nil? and not session[:ratings].nil?
+      params[:ratings] = session[:ratings]
+      redirect = true
+    elsif params[:ratings] != session[:ratings]
+      session[:ratings] = params[:ratings]
+      redirect = true
+    end
+
     params[:ratings].each_key { |key| @checked[key] = true } if params[:ratings] != nil
     
     # get title and release dates filters
@@ -60,8 +48,11 @@ class MoviesController < ApplicationController
       @movies = Movie.find(:all, :conditions => { :rating => params[:ratings].keys }, :order => :release_date)
       @release_date_header = 'hilite'
     else
-      @movies = Movie.all if params[:ratings] == nil
-      @movies = Movie.find(:all, :conditions => { :rating => params[:ratings].keys }) if params[:ratings] != nil
+      @movies = Movie.find(:all, :conditions => { :rating => params[:ratings].keys }) 
+    end
+    
+    if redirect
+      redirect_to movies_path(selected: params[:selected], ratings: params[:ratings])
     end
   end
 
