@@ -12,7 +12,6 @@ class MoviesController < ApplicationController
     @all_ratings = m.ratings_values
     
     #debugger
-    #TODO
     if params[:selected].nil? and params[:ratings].nil? and not session[:selected].nil?
       tmp = session[:selected]
       session.delete(:selected)
