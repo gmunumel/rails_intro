@@ -12,6 +12,7 @@ class MoviesController < ApplicationController
     @all_ratings = m.ratings_values
     
     #debugger
+=begin
     if params[:selected].nil? and params[:ratings].nil? and not session[:selected].nil?
       tmp = session[:selected]
       session.delete(:selected)
@@ -37,18 +38,26 @@ class MoviesController < ApplicationController
       params[:ratings] ||= session[:ratings]
       session.delete(:selected)
     end
+=end
     
     # get checked values
     @checked = Hash.new(false)
+    #debugger
+    #params[:ratings] ||= session[:ratings]
+    session[:ratings] = params[:ratings] unless params[:ratings].nil? 
+    if params[:selected].nil? and params[:ratings].nil? and session[:selected].nil? and session[:ratings].nil? 
+      params[:ratings] = {"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"} 
+    end
+    params[:ratings] ||= session[:ratings]
     params[:ratings].each_key { |key| @checked[key] = true } if params[:ratings] != nil
     
     # get title and release dates filters
     case params[:selected]
     when 'M'
-      @movies = Movie.find(:all, :order => :title)
+      @movies = Movie.find(:all, :conditions => { :rating => params[:ratings].keys }, :order => :title)
       @title_header = 'hilite'
     when 'R'
-      @movies = Movie.find(:all, :order => :release_date)
+      @movies = Movie.find(:all, :conditions => { :rating => params[:ratings].keys }, :order => :release_date)
       @release_date_header = 'hilite'
     else
       @movies = Movie.all if params[:ratings] == nil

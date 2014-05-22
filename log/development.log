@@ -18459,3 +18459,1271 @@ Served asset /jquery_ujs.js - 304 Not Modified (0ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:47:15 -0400
 Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.12.35.1 at 2014-05-22 15:20:10 -0400
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (12ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:20:16 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BR%5D=1
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 670.0ms (ActiveRecord: 29.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:20:17 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BR%5D=1
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 18.2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?ratings%5BR%5D=1" for 127.12.35.1 at 2014-05-22 15:20:18 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"R"=>"1"}}
+  [1m[36mMovie Load (1.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R')[0m
+  Rendered movies/index.html.haml within layouts/application (62.3ms)
+Completed 200 OK in 689.2ms (Views: 638.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:20 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:20:21 -0400
+Served asset /application.css - 304 Not Modified (54ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (193ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:21 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:20:47 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.1ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/index.html.haml within layouts/application (65.3ms)
+Completed 200 OK in 94.0ms (Views: 87.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:20:48 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (35.4ms)
+Completed 200 OK in 63.3ms (Views: 59.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:20:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:49 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 15:20:51 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (15.5ms)
+Completed 200 OK in 29.0ms (Views: 24.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:52 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:20:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 127.12.35.1 at 2014-05-22 15:20:55 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (54.5ms)
+Completed 200 OK in 67.4ms (Views: 63.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:55 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:55 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:20:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:20:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:20:59 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 4.9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 15:21:00 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (44.2ms)
+Completed 200 OK in 148.4ms (Views: 143.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:21:01 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:21:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:21:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:21:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:34:35 -0400
+Connecting to database specified by database.yml
+
+SyntaxError (/var/lib/stickshift/5377929450044641550001dc/app-root/data/866073/app/controllers/movies_controller.rb:89: syntax error, unexpected $end, expecting keyword_end):
+  activesupport (3.2.18) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.18) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.18) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.18) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.18) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.18) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `_run__4359427886766951046__call__3279409787781746887__callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.18) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.18) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/debugger.rb:20:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:138:in `service'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/httpserver.rb:94:in `run'
+  /opt/rh/ruby193/root/usr/share/ruby/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (112.8ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (377.9ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:35:37 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+Completed 302 Found in 360.6ms (ActiveRecord: 41.9ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 15:35:38 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (145.8ms)
+Completed 200 OK in 429.3ms (Views: 420.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:35:38 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:35:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:35:39 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:35:39 -0400
+Served asset /application.js - 304 Not Modified (44ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:39:39 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (23.1ms)
+Completed 200 OK in 187.1ms (Views: 96.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:39:40 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/index.html.haml within layouts/application (21.6ms)
+Completed 200 OK in 64.6ms (Views: 60.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:39:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:39:41 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:39:42 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:39:42 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:41:33 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (110.4ms)
+Completed 200 OK in 1940.9ms (Views: 1142.5ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:41:41 -0400
+Served asset /application.js - 304 Not Modified (50ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:41:41 -0400
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:41:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (67ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:41:41 -0400
+Served asset /jquery.js - 304 Not Modified (499ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 15:48:01 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (99.9ms)
+Completed 200 OK in 1079.1ms (Views: 587.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:48:57 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/index.html.haml within layouts/application (18.2ms)
+Completed 200 OK in 38.2ms (Views: 34.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:48:58 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:48:58 -0400
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:48:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:48:59 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:51:54 -0400
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 92.1ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:57:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.6ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:56:28 -0400
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 208.7ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:60:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.7ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (93.2ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:57:11 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 109670.4ms (Views: 50.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:59:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:59:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:59:02 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:59:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 15:59:06 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (36.2ms)
+Completed 200 OK in 5383.8ms (Views: 74.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 15:59:12 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 15:59:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 15:59:13 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 15:59:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 15:59:58 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+Completed 500 Internal Server Error in 100.0ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:54:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (97.9ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:05:28 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (2.9ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (16.5ms)
+Completed 200 OK in 149.4ms (Views: 28.3ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:05:29 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:05:29 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:05:30 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:05:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:07:37 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (210.9ms)
+Completed 200 OK in 291.1ms (Views: 287.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:07:38 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:07:38 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:07:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:07:39 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:09:17 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+Completed 302 Found in 39574.4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:09:56 -0400
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 2108.6ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:63:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (104.9ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.12.35.1 at 2014-05-22 16:09:59 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (91.0ms)
+Completed 200 OK in 1975.3ms (Views: 158.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:10:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:10:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:10:02 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:10:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.12.35.1 at 2014-05-22 16:10:14 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (51.2ms)
+Completed 200 OK in 10440.6ms (Views: 60.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:10:25 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:10:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:10:26 -0400
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:10:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:10:38 -0400
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 67.3ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:63:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.0ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (75.1ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:10:40 -0400
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 6.1ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:63:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.8ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.5ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (216.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:11:38 -0400
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 10754.5ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:63:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (89.3ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:12:23 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+Completed 302 Found in 48132.7ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.12.35.1 at 2014-05-22 16:13:15 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (104.9ms)
+Completed 200 OK in 8536.9ms (Views: 458.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:13:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:13:24 -0400
+Served asset /application.js - 304 Not Modified (123ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:13:25 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:13:25 -0400
+Served asset /jquery.js - 304 Not Modified (48ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:13:35 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 13125.3ms (Views: 21.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:13:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:13:48 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:13:49 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:13:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:13:56 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'R')
+  Rendered movies/index.html.haml within layouts/application (12.6ms)
+Completed 200 OK in 7527.4ms (Views: 21.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:14:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:14:04 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:14:05 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:14:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:15:29 -0400
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 20023.5ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:63:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.5ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (97.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:15:49 -0400
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 19523.8ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:63:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.2ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:16:09 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (17.5ms)
+Completed 200 OK in 2610.9ms (Views: 31.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:16:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:16:13 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:16:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:16:13 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:16:18 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (12.0ms)
+Completed 200 OK in 3498.0ms (Views: 26.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:16:22 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:16:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:16:23 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:16:23 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:17:00 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 49183.0ms (Views: 20.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:17:50 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:17:50 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:17:51 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:17:51 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:25:31 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (193.2ms)
+Completed 200 OK in 14879.9ms (Views: 204.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:25:46 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:25:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:25:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:25:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:25:51 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.8ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 10824.4ms (Views: 19.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:26:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:26:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:26:03 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:26:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 16:26:28 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+Completed 500 Internal Server Error in 19.7ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:56:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (95.3ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:29:03 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (2.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (52.9ms)
+Completed 200 OK in 16099.0ms (Views: 76.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:29:19 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (66.1ms)
+Completed 200 OK in 10616.5ms (Views: 98.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:29:30 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:29:30 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:29:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:29:31 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:29:37 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (178.3ms)
+Completed 200 OK in 9560.9ms (Views: 194.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:29:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:29:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:29:48 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:29:48 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 16:29:53 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R') ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (162.5ms)
+Completed 200 OK in 16800.0ms (Views: 263.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:30:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:30:10 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:30:11 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:30:11 -0400
+Served asset /application.js - 304 Not Modified (36ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:38:04 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 2415.3ms (Views: 30.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:38:06 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (150.3ms)
+Completed 200 OK in 24271.2ms (Views: 202.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:38:31 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:38:31 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:38:32 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:38:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:38:37 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 3320.8ms (Views: 23.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:38:41 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:38:41 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:38:42 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:38:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 16:38:54 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+Completed 500 Internal Server Error in 19172.3ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:60:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.1ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:40:59 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (14.2ms)
+Completed 200 OK in 17265.8ms (Views: 28.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:41:16 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (104.3ms)
+Completed 200 OK in 2490.6ms (Views: 114.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:41:19 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:41:19 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:41:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:41:20 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:41:35 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (16.7ms)
+Completed 200 OK in 19497.2ms (Views: 27.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:41:55 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:41:55 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:41:56 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:41:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 16:42:00 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+Completed 500 Internal Server Error in 92379.7ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:60:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (79.8ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:44:26 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (35.2ms)
+Completed 200 OK in 45283.4ms (Views: 590.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:45:14 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (254.2ms)
+Completed 200 OK in 5576.2ms (Views: 516.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:45:20 -0400
+Served asset /application.css - 304 Not Modified (89ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:45:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (110ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:45:21 -0400
+Served asset /jquery.js - 304 Not Modified (154ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:45:21 -0400
+Served asset /application.js - 304 Not Modified (52ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:45:28 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 2615.5ms (Views: 70.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:45:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:45:31 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:45:32 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:45:32 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 16:45:37 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+Completed 500 Internal Server Error in 6054.5ms
+
+NoMethodError (undefined method `keys' for nil:NilClass):
+  app/controllers/movies_controller.rb:60:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.4ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.7ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (203.8ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 16:53:45 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.0ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (115.5ms)
+Completed 200 OK in 1378.8ms (Views: 257.7ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:53:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:53:49 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:53:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:53:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (36ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 16:53:55 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R') ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (95.6ms)
+Completed 200 OK in 145.9ms (Views: 140.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:53:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:53:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:53:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:53:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 16:55:11 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG-13', 'R') ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (298.2ms)
+Completed 200 OK in 647.2ms (Views: 583.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:55:12 -0400
+Served asset /jquery.js - 304 Not Modified (82ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:55:13 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:55:14 -0400
+Served asset /application.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:55:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:55:22 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (107.0ms)
+Completed 200 OK in 140.9ms (Views: 130.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:55:23 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:55:23 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:55:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:55:24 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:55:58 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R')
+  Rendered movies/index.html.haml within layouts/application (28.6ms)
+Completed 200 OK in 64.8ms (Views: 54.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:55:59 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:55:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:56:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:56:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 16:57:54 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R') ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (184.5ms)
+Completed 200 OK in 380.0ms (Views: 311.9ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:57:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:57:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:57:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:57:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&commit=Refresh" for 127.12.35.1 at 2014-05-22 16:58:05 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R')
+  Rendered movies/index.html.haml within layouts/application (51.8ms)
+Completed 200 OK in 71.1ms (Views: 64.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 16:58:06 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 16:58:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 16:58:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 16:58:07 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
