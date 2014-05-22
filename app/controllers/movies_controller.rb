@@ -14,6 +14,17 @@ class MoviesController < ApplicationController
     # get checked values
     @checked = Hash.new(false)
     params[:ratings].each_key { |key| @checked[key] = true } if params[:ratings] != nil
+
+    #debugger
+    if params[:selected].nil? and not session[:selected].nil?
+      tmp = session[:selected]
+      session[:selected] = nil
+      flash.keep
+      redirect_to movies_path(selected: tmp)
+    end
+    session[:selected] = params[:selected] if params[:selected] != session[:selected]
+    session[:selected] ||= params[:selected]
+    params[:selected] ||= session[:selected]
     
     # get title and release dates filters
     case params[:selected]
