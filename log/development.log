@@ -16092,3 +16092,2370 @@ Served asset /jquery.js - 304 Not Modified (1ms)
 
 Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 12:01:27 -0400
 Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 12:17:25 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=M
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 19.2ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 12:17:27 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title
+  Rendered movies/index.html.haml within layouts/application (56.6ms)
+Completed 200 OK in 80.1ms (Views: 73.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 12:18:28 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=M
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 763.8ms (ActiveRecord: 84.6ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 12:18:35 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[35mMovie Load (30.8ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title
+  Rendered movies/index.html.haml within layouts/application (338.6ms)
+Completed 200 OK in 852.6ms (Views: 809.5ms | ActiveRecord: 30.8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 12:18:37 -0400
+Served asset /jquery_ujs.js - 200 OK (35ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 12:18:37 -0400
+Served asset /application.css - 200 OK (447ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 12:18:38 -0400
+Served asset /jquery.js - 200 OK (53ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 12:18:38 -0400
+Served asset /application.js - 200 OK (315ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 12:18:45 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=M
+  [1m[36mMovie Load (5.7ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 149.5ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 12:18:45 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title
+  Rendered movies/index.html.haml within layouts/application (205.8ms)
+Completed 200 OK in 439.0ms (Views: 426.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 12:18:54 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=M
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G')[0m
+Completed 302 Found in 17.1ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 12:18:55 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title
+  Rendered movies/index.html.haml within layouts/application (94.4ms)
+Completed 200 OK in 368.6ms (Views: 342.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 12:19:33 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=M
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 5.5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 12:19:34 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=M
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 105.0ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 12:19:35 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[36mMovie Load (5.1ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (116.5ms)
+Completed 200 OK in 583.4ms (Views: 574.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 12:22:49 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=M
+Redirected to 
+Completed 500 Internal Server Error in 82.9ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/movies_controller.rb:29:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (174.8ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 12:22:51 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=M
+Redirected to 
+Completed 500 Internal Server Error in 5.0ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/movies_controller.rb:29:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.7ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (94.4ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 12:25:50 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=M
+Redirected to 
+Completed 500 Internal Server Error in 271.0ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/movies_controller.rb:31:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (95.9ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 12:27:14 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=M
+Redirected to 
+Completed 500 Internal Server Error in 20255.0ms
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/movies_controller.rb:31:in `index'
+
+
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.6ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /var/lib/stickshift/5377929450044641550001dc/app-root/data/lib/ruby/gems/gems/actionpack-3.2.18/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (65.4ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 12:28:54 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/index.html.haml within layouts/application (33.1ms)
+Completed 200 OK in 17632.0ms (Views: 47.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 12:29:12 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 12:29:12 -0400
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 12:29:13 -0400
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 12:29:13 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 12:29:21 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+  Rendered movies/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 31442.2ms (Views: 17.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/movies/9" for 127.12.35.1 at 2014-05-22 12:30:04 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "9"]]
+  Rendered movies/show.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 65.1ms (Views: 60.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 12:30:07 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 3729.7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:12 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+  Rendered movies/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 2159.8ms (Views: 17.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:31 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 80.7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:32 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 5.1ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:34 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 4.9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:35 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 4.5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:36 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 81.0ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:36 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 9.1ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:38 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 10.4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:38 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 14.3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:39 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 10.6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:39 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 4.5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:40 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 4.9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:40 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 4.0ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:40 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 6.2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:41 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 3.8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:42 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 4.8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:43 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 6.4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:44 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 5.1ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:44 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 6.3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:45 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (1.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 5.4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 12:30:46 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 3.8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 12:30:48 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 4.4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 13:18:05 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 407.0ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:09 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (166.5ms)
+Completed 200 OK in 460.0ms (Views: 456.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 13:18:20 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 14.5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:21 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 6.9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:18:21 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 4.4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:22 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 5.6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:18:23 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (108.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 184.4ms (ActiveRecord: 108.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:24 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 8.1ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:18:25 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 3.9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:26 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 5.3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:18:27 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 3.2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:28 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 5.5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:18:29 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 27.3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:30 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 9.4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:18:30 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 3.7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:31 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 4.1ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:18:31 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 3.8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:32 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 5.0ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:18:33 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 3.8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:34 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 5.7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:18:36 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 10.7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:18:37 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 4.4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:18:37 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 6.7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 13:37:24 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 480.5ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:37:29 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+  Rendered movies/index.html.haml within layouts/application (95.2ms)
+Completed 200 OK in 410.9ms (Views: 400.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:37:30 -0400
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:37:30 -0400
+Served asset /application.js - 200 OK (11ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.12.35.1 at 2014-05-22 13:37:31 -0400
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:37:31 -0400
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&commit=Refresh" for 127.12.35.1 at 2014-05-22 13:37:41 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 10.6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:37:42 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+  [1m[35mMovie Load (12.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+  Rendered movies/index.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 40.0ms (Views: 24.2ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:37:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:37:43 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:37:43 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:37:51 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 5.5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:37:53 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+  Rendered movies/index.html.haml within layouts/application (30.0ms)
+Completed 200 OK in 50.6ms (Views: 46.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:37:53 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:37:54 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:37:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 13:37:59 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 6.5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:38:00 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+  Rendered movies/index.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 39.3ms (Views: 36.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:38:00 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:38:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:38:01 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 13:39:14 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (171.5ms)
+Completed 200 OK in 261.8ms (Views: 256.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:14 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:15 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:39:25 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (63.7ms)
+Completed 200 OK in 81.0ms (Views: 74.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:25 -0400
+Served asset /application.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:25 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 127.12.35.1 at 2014-05-22 13:39:28 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 98.9ms (Views: 19.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:29 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:29 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 13:39:31 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 4.6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:39:33 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (105.1ms)
+Completed 200 OK in 152.5ms (Views: 148.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:33 -0400
+Served asset /application.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:34 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 13:39:40 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 14.1ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:39:40 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (303.0ms)
+Completed 200 OK in 443.0ms (Views: 364.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:41 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:39:42 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 13:42:05 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 27790.1ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:42:34 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (13.2ms)
+Completed 200 OK in 10479.9ms (Views: 24.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:42:45 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:42:45 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:42:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 13:43:55 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/index.html.haml within layouts/application (14.9ms)
+Completed 200 OK in 51.5ms (Views: 32.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:43:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:43:56 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:43:57 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 13:44:00 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+  Rendered movies/index.html.haml within layouts/application (49.1ms)
+Completed 200 OK in 62.5ms (Views: 59.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:44:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:44:01 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:44:01 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:44:03 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 5.6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:44:04 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+  Rendered movies/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 51.6ms (Views: 48.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:44:04 -0400
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:44:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:44:05 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 13:44:40 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 20855.6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 13:45:03 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+  Rendered movies/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 49164.3ms (Views: 19.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 13:45:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 13:45:53 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 13:45:53 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:00:15 -0400
+Processing by MoviesController#index as HTML
+Completed   in 311.8ms
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:06:00 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed   in 224051.4ms
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:10:29 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (89.3ms)
+Completed 200 OK in 59918.6ms (Views: 492.5ms | ActiveRecord: 180.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (76ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:33 -0400
+Served asset /jquery.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:34 -0400
+Served asset /application.js - 304 Not Modified (93ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:11:38 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (28.8ms)
+Completed 200 OK in 89.2ms (Views: 49.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:39 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:40 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 14:11:43 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[36mMovie Load (6.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (41.7ms)
+Completed 200 OK in 75.3ms (Views: 65.7ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:43 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:44 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/movies/5" for 127.12.35.1 at 2014-05-22 14:11:46 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "5"]]
+  Rendered movies/show.html.haml within layouts/application (25.4ms)
+Completed 200 OK in 67.9ms (Views: 52.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:47 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:47 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:11:49 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (23.2ms)
+Completed 200 OK in 111.7ms (Views: 102.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:50 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:51 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:11:51 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:12:52 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+  Rendered movies/index.html.haml within layouts/application (14.3ms)
+Completed 200 OK in 54.7ms (Views: 37.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:12:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:12:54 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:12:54 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:13:00 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')[0m
+  Rendered movies/index.html.haml within layouts/application (29.7ms)
+Completed 200 OK in 66.1ms (Views: 55.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:13:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:13:01 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:13:01 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:13:05 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (83.3ms)
+Completed 200 OK in 106.3ms (Views: 96.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:13:06 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:13:07 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:13:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 14:13:37 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (31.8ms)
+Completed 200 OK in 31816.0ms (Views: 62.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:14:10 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:14:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:14:11 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:15:00 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (46.6ms)
+Completed 200 OK in 10945.5ms (Views: 76.7ms | ActiveRecord: 151.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:15:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:15:11 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:15:12 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 14:15:17 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (317.2ms)
+Completed 200 OK in 20774.4ms (Views: 355.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:15:38 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+  Rendered movies/index.html.haml within layouts/application (22.2ms)
+Completed 200 OK in 5762.7ms (Views: 49.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:15:44 -0400
+Served asset /jquery.js - 304 Not Modified (67ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:15:44 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:15:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:15:55 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (54.3ms)
+Completed 200 OK in 17504.0ms (Views: 92.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:16:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:16:13 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:16:14 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/movies/2" for 127.12.35.1 at 2014-05-22 14:16:21 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered movies/show.html.haml within layouts/application (14.5ms)
+Completed 200 OK in 56.3ms (Views: 45.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:16:21 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:16:21 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:16:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:16:24 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (65.8ms)
+Completed 200 OK in 21458.6ms (Views: 184.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:16:45 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:16:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:16:46 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:22:11 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+  Rendered movies/index.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 140.3ms (Views: 25.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:22:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:22:13 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:22:13 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:22:36 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG')[0m
+  Rendered movies/index.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 64.0ms (Views: 39.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:22:37 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:22:38 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:22:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (65ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:22:47 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13')
+  Rendered movies/index.html.haml within layouts/application (26.3ms)
+Completed 200 OK in 57.8ms (Views: 47.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:22:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:22:48 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:22:48 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:23:38 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (34.2ms)
+Completed 200 OK in 32530.7ms (Views: 60.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:24:11 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:24:12 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:24:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:25:56 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (21.0ms)
+Completed 200 OK in 67.4ms (Views: 41.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:25:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:25:57 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:25:57 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:26:23 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (25.4ms)
+Completed 200 OK in 38462.3ms (Views: 165.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:27:02 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:27:03 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:27:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:29:01 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG', 'PG-13', 'R')
+  Rendered movies/index.html.haml within layouts/application (24.1ms)
+Completed 200 OK in 14586.0ms (Views: 116.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:29:16 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:29:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:29:17 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/movies/3" for 127.12.35.1 at 2014-05-22 14:29:28 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered movies/show.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 96.9ms (Views: 50.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:29:28 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:29:29 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:29:29 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:29:31 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 16.0ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.12.35.1 at 2014-05-22 14:29:32 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG', 'PG-13', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (36.6ms)
+Completed 200 OK in 84.6ms (Views: 70.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:29:32 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:29:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:29:33 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:30:16 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Completed 302 Found in 128.6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1" for 127.12.35.1 at 2014-05-22 14:30:16 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1", "PG-13"=>"1", "R"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (13.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 17.8ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:30:17 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (29.1ms)
+Completed 200 OK in 212.8ms (Views: 209.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:18 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:19 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:19 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/1" for 127.12.35.1 at 2014-05-22 14:30:22 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 51.6ms (Views: 37.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:23 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:24 -0400
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:30:25 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 8.8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:30:26 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (106.6ms)
+Completed 200 OK in 134.0ms (Views: 122.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:27 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:27 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:30:30 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (3.5ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 7.9ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:30:31 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (28.1ms)
+Completed 200 OK in 51.4ms (Views: 43.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:31 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:30:32 -0400
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:31:21 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/index.html.haml within layouts/application (38.0ms)
+Completed 200 OK in 257.3ms (Views: 55.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:23 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:23 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:31:32 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (5.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+  Rendered movies/index.html.haml within layouts/application (21.1ms)
+Completed 200 OK in 124.7ms (Views: 116.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:34 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:35 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies/8" for 127.12.35.1 at 2014-05-22 14:31:38 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered movies/show.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 30.1ms (Views: 26.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:38 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:39 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:31:41 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 10.0ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:31:43 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+  Rendered movies/index.html.haml within layouts/application (18.3ms)
+Completed 200 OK in 63.6ms (Views: 50.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:44 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:31:44 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:31:51 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 4.7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:31:51 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 6.9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:31:52 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 11.2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:31:53 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 9.8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:31:53 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 11.5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:31:54 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 9.8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:31:55 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 7.1ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:31:57 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 7.2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:31:58 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 4.4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:31:58 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (2.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 5.8ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:31:59 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 12.3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:32:00 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 6.0ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:32:01 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 10.9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:32:01 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (4.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 7.7ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:32:01 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 4.4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:32:02 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 3.6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:32:02 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 21.5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:32:02 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 15.8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:32:03 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 17.5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:32:03 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 5.9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:32:04 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 24.7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:36:42 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/index.html.haml within layouts/application (45.9ms)
+Completed 200 OK in 335.6ms (Views: 288.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:36:43 -0400
+Served asset /application.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:36:43 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:36:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:36:49 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (46.2ms)
+Completed 200 OK in 330.6ms (Views: 139.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:36:50 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:36:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:36:50 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:37:00 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 14.3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:37:01 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 22.8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:37:02 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 9.8ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:37:02 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (9.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 13.7ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:37:03 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 11.6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:37:05 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (4.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 8.5ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:37:06 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 15.7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:37:06 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 21.0ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:37:07 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 4.7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:37:09 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 40.3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:37:09 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 39.8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:37:09 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 14.6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:37:11 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (6.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 11.8ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:37:12 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 9.8ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:37:13 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 12.0ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:37:14 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 17.3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:37:15 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 76.3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:37:15 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (7.7ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 22.1ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:37:16 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 15.2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:37:18 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 9.2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:37:19 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 182.6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:37:28 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 62984.0ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:39:01 -0400
+Connecting to database specified by database.yml
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (458.9ms)
+Completed 200 OK in 16141.4ms (Views: 1247.0ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:39:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:39:21 -0400
+Served asset /application.js - 304 Not Modified (92ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:39:22 -0400
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:39:23 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (62.4ms)
+Completed 200 OK in 2556.6ms (Views: 107.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:39:26 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:39:27 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:39:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:39:31 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+Completed 302 Found in 143331.1ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:41:54 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+Completed 302 Found in 2532.8ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:41:58 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+Completed 302 Found in 174902.7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:44:53 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/index.html.haml within layouts/application (30.9ms)
+Completed 200 OK in 189.9ms (Views: 53.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:44:54 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:44:54 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:44:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:44:58 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (110.7ms)
+Completed 200 OK in 151.2ms (Views: 147.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:44:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:44:59 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:44:59 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/movies/3" for 127.12.35.1 at 2014-05-22 14:45:03 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered movies/show.html.haml within layouts/application (24.8ms)
+Completed 200 OK in 74.3ms (Views: 65.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:45:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:45:04 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:45:05 -0400
+Served asset /application.js - 304 Not Modified (70ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:45:06 -0400
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+  Rendered movies/index.html.haml within layouts/application (35.8ms)
+Completed 200 OK in 222.5ms (Views: 212.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:45:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:45:08 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:45:08 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:46:24 -0400
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" 
+  Rendered movies/index.html.haml within layouts/application (365.3ms)
+Completed 200 OK in 467.4ms (Views: 409.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:25 -0400
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:25 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:46:29 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_date[0m
+  Rendered movies/index.html.haml within layouts/application (49.7ms)
+Completed 200 OK in 89.4ms (Views: 74.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:29 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:30 -0400
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:30 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/movies/1" for 127.12.35.1 at 2014-05-22 14:46:32 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMovie Load (6.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered movies/show.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 40.7ms (Views: 31.7ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:33 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:34 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:46:35 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?selected=R
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 31.2ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/movies?selected=R" for 127.12.35.1 at 2014-05-22 14:46:36 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"R"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+  Rendered movies/index.html.haml within layouts/application (40.0ms)
+Completed 200 OK in 145.2ms (Views: 69.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:37 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:38 -0400
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BPG%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:46:42 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"PG"=>"1"}, "commit"=>"Refresh"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')[0m
+  Rendered movies/index.html.haml within layouts/application (20.9ms)
+Completed 200 OK in 50.7ms (Views: 41.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:42 -0400
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:42 -0400
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies/8" for 127.12.35.1 at 2014-05-22 14:46:49 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered movies/show.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 335.5ms (Views: 103.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:49 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:49 -0400
+Served asset /application.js - 304 Not Modified (172ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:46:52 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BPG%5D=1
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Completed 302 Found in 4.6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BPG%5D=1" for 127.12.35.1 at 2014-05-22 14:46:53 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"PG"=>"1"}}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('PG')
+  Rendered movies/index.html.haml within layouts/application (20.0ms)
+Completed 200 OK in 48.1ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:54 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:54 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/movies?selected=M" for 127.12.35.1 at 2014-05-22 14:46:57 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"selected"=>"M"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+  Rendered movies/index.html.haml within layouts/application (47.6ms)
+Completed 200 OK in 211.7ms (Views: 198.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:58 -0400
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:58 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:46:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BR%5D=1&commit=Refresh" for 127.12.35.1 at 2014-05-22 14:47:04 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"R"=>"1"}, "commit"=>"Refresh"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R')
+  Rendered movies/index.html.haml within layouts/application (21.6ms)
+Completed 200 OK in 60.8ms (Views: 45.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:47:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:47:05 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:47:05 -0400
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/movies/3" for 127.12.35.1 at 2014-05-22 14:47:08 -0400
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered movies/show.html.haml within layouts/application (3.6ms)
+Completed 200 OK in 67.1ms (Views: 55.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:47:09 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:47:09 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:47:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/movies" for 127.12.35.1 at 2014-05-22 14:47:12 -0400
+Processing by MoviesController#index as HTML
+Redirected to http://project-livec97822b32e74.rhcloud.com/movies?ratings%5BR%5D=1
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 302 Found in 27.9ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?ratings%5BR%5D=1" for 127.12.35.1 at 2014-05-22 14:47:13 -0400
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"R"=>"1"}}
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('R')[0m
+  Rendered movies/index.html.haml within layouts/application (35.3ms)
+Completed 200 OK in 74.9ms (Views: 63.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.12.35.1 at 2014-05-22 14:47:14 -0400
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.12.35.1 at 2014-05-22 14:47:15 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.12.35.1 at 2014-05-22 14:47:15 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)

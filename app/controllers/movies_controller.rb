@@ -11,20 +11,37 @@ class MoviesController < ApplicationController
     m = Movie.new
     @all_ratings = m.ratings_values
     
-    # get checked values
-    @checked = Hash.new(false)
-    params[:ratings].each_key { |key| @checked[key] = true } if params[:ratings] != nil
-
     #debugger
-    if params[:selected].nil? and not session[:selected].nil?
+    #TODO
+    if params[:selected].nil? and params[:ratings].nil? and not session[:selected].nil?
       tmp = session[:selected]
-      session[:selected] = nil
+      session.delete(:selected)
       flash.keep
       redirect_to movies_path(selected: tmp)
     end
-    session[:selected] = params[:selected] if params[:selected] != session[:selected]
-    session[:selected] ||= params[:selected]
-    params[:selected] ||= session[:selected]
+    if params[:ratings].nil? and params[:selected].nil? and not session[:ratings].nil?
+      tmp = session[:ratings]
+      session.delete(:ratings)
+      flash.keep
+      redirect_to movies_path(ratings: tmp)
+    end
+    
+    if not params[:selected].nil? 
+      session[:selected] = params[:selected] if params[:selected] != session[:selected]
+      session[:selected] ||= params[:selected]
+      params[:selected] ||= session[:selected]
+      session.delete(:ratings)
+    end
+    if not params[:ratings].nil? 
+      session[:ratings] = params[:ratings] if params[:ratings] != session[:ratings]
+      session[:ratings] ||= params[:ratings]
+      params[:ratings] ||= session[:ratings]
+      session.delete(:selected)
+    end
+    
+    # get checked values
+    @checked = Hash.new(false)
+    params[:ratings].each_key { |key| @checked[key] = true } if params[:ratings] != nil
     
     # get title and release dates filters
     case params[:selected]
